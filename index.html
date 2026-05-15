@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Para Maria Eduarda 🤍</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- MÚSICA DE FUNDO -->
+    <div id="music-player" class="paused">
+        <div class="music-icon">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <audio id="bg-audio" loop preload="auto">
+            <!-- 🚨 COLOQUE SUA MÚSICA AQUI 🚨 -->
+            <source src="musica/Luz Que Me Traz Paz - Maneva (youtube).mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <!-- TELA DE ABERTURA CLARA (TYPEWRITER) -->
+    <section id="preloader">
+        <div class="preloader-content">
+            <h2 id="typewriter-text"></h2>
+            <button id="enter-btn" class="hidden">Descubra o Nosso Universo</button>
+        </div>
+    </section>
+
+    <!-- CORAÇÕES FLUTUANTES (GERADOS PELO JS) -->
+    <div id="particles-container"></div>
+
+    <!-- CONTEÚDO PRINCIPAL (INICIA OCULTO PARA A ENTRADA TRIUNFAL) -->
+    <main id="main-content" class="hidden">
+
+        <!-- HERO SECTION (ENTRADA TRIUNFAL MANTIDA) -->
+        <section id="hero">
+            <!-- 🚨 COLOQUE SUA FOTO PRINCIPAL DE CAPA AQUI (Use o padrão ./) 🚨 -->
+            <div class="hero-bg" style="background-image: url('./capa.jpg');"></div>
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 class="triumphant-text">Maria Eduarda</h1>
+                <p class="hero-subtitle">A luz de todos os meus dias.</p>
+                <div class="scroll-indicator">
+                    <span>Role para baixo</span>
+                    <div class="mouse">
+                        <div class="wheel"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 1: O NOSSO TEMPO (CONTADOR) -->
+        <section id="time-together" class="reveal-section">
+            <div class="glass-container">
+                <h2 class="section-title">O Tempo Parou Quando Te Conheci</h2>
+                <p class="section-desc">Mas o nosso relógio começou a contar a partir de 18 de Outubro de 2024.</p>
+                <div class="countdown-grid">
+                    <div class="time-box">
+                        <span id="count-days">000</span>
+                        <label>Dias</label>
+                    </div>
+                    <div class="time-box">
+                        <span id="count-hours">00</span>
+                        <label>Horas</label>
+                    </div>
+                    <div class="time-box">
+                        <span id="count-minutes">00</span>
+                        <label>Minutos</label>
+                    </div>
+                    <div class="time-box">
+                        <span id="count-seconds">00</span>
+                        <label>Segundos</label>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 2: MANIFESTO DE AMOR -->
+        <section id="love-manifesto" class="reveal-section">
+            <h2 class="section-title">Por Que Eu Te Amo?</h2>
+            <div class="manifesto-cards">
+                <div class="card gpu-accelerated">
+                    <div class="card-icon">✨</div>
+                    <h3>Seu Sorriso</h3>
+                    <p>Ele tem o poder absoluto de clarear o meu dia mais cinzento em questão de segundos. É a minha visão favorita no mundo inteiro.</p>
+                </div>
+                <div class="card gpu-accelerated">
+                    <div class="card-icon">🫂</div>
+                    <h3>Seu Abraço</h3>
+                    <p>É o meu refúgio, o meu lugar seguro onde todo o caos do mundo simplesmente desaparece e eu encontro a paz.</p>
+                </div>
+                <div class="card gpu-accelerated">
+                    <div class="card-icon">👑</div>
+                    <h3>Sua Essência</h3>
+                    <p>A forma maravilhosa como você enxerga a vida e a força gigante que você tem. Você me inspira a ser a minha melhor versão.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- NOVA SEÇÃO 3: CARTA ABERTA (COM FOTO GIGANTE) -->
+        <section id="open-letter" class="reveal-section">
+            <div class="letter-layout">
+                <div class="letter-photo tilt-effect gpu-accelerated">
+                    <!-- 🚨 COLOQUE UMA FOTO LINDÍSSIMA SÓ DELA OU DE VOCÊS AQUI 🚨 -->
+                    <img src="imagens/WhatsApp Image 2026-05-15 at 16.15.55 (2).jpeg" alt="A dona do meu coração" loading="lazy" decoding="async">
+                </div>
+                <div class="letter-text">
+                    <h2 class="section-title" style="text-align: left;">Minha Querida Duda,</h2>
+                    <p>Escrever sobre o que eu sinto por você é tentar explicar o inexplicável. Antes de você, eu não sabia que cabia tanto amor em mim.</p>
+                    <p>Eu amo a forma como a gente se entende, as nossas risadas sem motivo, e até os nossos momentos de silêncio. Tudo com você é leve, é fácil, é casa.</p>
+                    <p>Quando olho para o futuro, a única certeza que eu tenho é que quero você segurando a minha mão. Eu prometo continuar te escolhendo, todos os dias, pelo resto da minha vida. Você é e sempre será o meu maior presente.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- NOVA SEÇÃO 4: NOSSAS PROMESSAS (FRASES ROMÂNTICAS ADICIONAIS) -->
+        <section id="promises" class="reveal-section">
+            <h2 class="section-title">Minhas Promessas Para Você</h2>
+            <p class="section-desc">Palavras que eu vou transformar em atitudes todos os dias.</p>
+            <div class="promises-grid">
+                <div class="promise-item gpu-accelerated">
+                    <h4>Prometo Cuidar</h4>
+                    <p>"Prometo ser o seu abrigo nas tempestades, celebrar suas vitórias e enxugar suas lágrimas antes mesmo delas caírem."</p>
+                </div>
+                <div class="promise-item gpu-accelerated">
+                    <h4>Prometo Escutar</h4>
+                    <p>"Prometo ouvir não apenas as suas palavras, mas entender os seus silêncios e respeitar o seu tempo."</p>
+                </div>
+                <div class="promise-item gpu-accelerated">
+                    <h4>Prometo Admirar</h4>
+                    <p>"Prometo olhar para você todos os dias com a mesma paixão e fascínio de quando percebi que estava apaixonado pela primeira vez."</p>
+                </div>
+                <div class="promise-item gpu-accelerated">
+                    <h4>Prometo Ficar</h4>
+                    <p>"Nos dias fáceis e principalmente nos difíceis. Porque o amor de verdade não foge da batalha, ele constrói o paraíso junto."</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 5: GALERIA INTERATIVA (MAIS FOTOS) -->
+        <section id="gallery" class="reveal-section">
+            <h2 class="section-title">Nossa Galeria Principal</h2>
+            <p class="section-desc">Cada clique é uma prova do quanto somos felizes juntos.</p>
+            <div class="gallery-layout">
+                <!-- 🚨 COLOQUE MAIS 6 FOTOS AQUI (Com loading lazy para performance) 🚨 -->
+                <div class="gallery-item tilt-effect gpu-accelerated"><img src="imagens/WhatsApp Image 2026-05-15 at 16.15.56.jpeg" alt="Nosso Momento 1" loading="lazy" decoding="async"></div>
+                <div class="gallery-item tilt-effect gpu-accelerated"><img src="imagens/WhatsApp Image 2026-05-15 at 16.15.56 (2).jpeg" alt="Nosso Momento 2" loading="lazy" decoding="async"></div>
+                <div class="gallery-item tilt-effect gpu-accelerated"><img src="imagens/WhatsApp Image 2026-05-15 at 16.15.55.jpeg" alt="Nosso Momento 3" loading="lazy" decoding="async"></div>
+                <div class="gallery-item tilt-effect gpu-accelerated"><img src="imagens/WhatsApp Image 2026-05-15 at 16.15.55 (3).jpeg" alt="Nosso Momento 4" loading="lazy" decoding="async"></div>
+                <div class="gallery-item tilt-effect gpu-accelerated"><img src="imagens/WhatsApp Image 2026-05-15 at 16.15.54.jpeg" alt="Nosso Momento 5" loading="lazy" decoding="async"></div>
+                <div class="gallery-item tilt-effect gpu-accelerated"><img src="imagens/WhatsApp Image 2026-05-15 at 16.15.54 (2).jpeg" alt="Nosso Momento 6" loading="lazy" decoding="async"></div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 6: POLAROIDES DAS NOSSAS AVENTURAS -->
+        <section id="polaroid-memories" class="reveal-section">
+            <h2 class="section-title">Fragmentos de Nós</h2>
+            <p class="section-desc">Pequenos momentos que viraram memórias eternas em meu coração.</p>
+            <div class="polaroid-scatter">
+                <!-- 🚨 E AQUI VÃO MAIS 4 FOTOS (ESTILO POLAROID ESPALHADA) 🚨 -->
+                <div class="polaroid tilt-effect gpu-accelerated" style="transform: rotate(-5deg) translateZ(0);">
+                    <img src="imagens/WhatsApp Image 2026-05-15 at 16.15.54 (1).jpeg" alt="Aventura 1" loading="lazy" decoding="async">
+                    <p>Nosso dia especial</p>
+                </div>
+                <div class="polaroid tilt-effect gpu-accelerated" style="transform: rotate(3deg) translateZ(0); margin-top: 40px;">
+                    <img src="imagens/WhatsApp Image 2026-05-15 at 16.15.52.jpeg" alt="Aventura 2" loading="lazy" decoding="async">
+                    <p>Sempre nós dois</p>
+                </div>
+                <div class="polaroid tilt-effect gpu-accelerated" style="transform: rotate(-2deg) translateZ(0);">
+                    <img src="imagens/WhatsApp Image 2026-05-15 at 16.15.52 (3).jpeg" alt="Aventura 3" loading="lazy" decoding="async">
+                    <p>Meu lugar favorito</p>
+                </div>
+                <div class="polaroid tilt-effect gpu-accelerated" style="transform: rotate(6deg) translateZ(0); margin-top: 20px;">
+                    <img src="imagens/WhatsApp Image 2026-05-15 at 16.15.52 (2).jpeg" alt="Aventura 4" loading="lazy" decoding="async">
+                    <p>Eu amo amar você</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 7: NOSSOS PLANOS FUTUROS -->
+        <section id="future-plans" class="reveal-section">
+            <div class="glass-container outline-container">
+                <h2 class="section-title">Nossa Lista de Sonhos</h2>
+                <p class="section-desc">O que nós ainda vamos viver juntos e conquistar lado a lado...</p>
+                <ul class="dream-list">
+                    <li><span class="check-icon">🤍</span> Viajar para aquele lugar que a gente tanto fala e sonha.</li>
+                    <li><span class="check-icon">🤍</span> Adotar um bichinho de estimação e dar um nome bem engraçado.</li>
+                    <li><span class="check-icon">🤍</span> Fazer uma maratona da nossa série preferida o dia todo sem culpa.</li>
+                    <li><span class="check-icon">🤍</span> Construir a nossa casa, do nosso jeito, com muito amor.</li>
+                    <li><span class="check-icon">🤍</span> Amar você um pouco mais forte a cada novo amanhecer.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 8: A NOSSA TRILHA SONORA -->
+        <section id="playlist" class="reveal-section">
+            <h2 class="section-title">Nossa Trilha Sonora</h2>
+            <p class="section-desc">Músicas que tocam e eu lembro instantaneamente do seu sorriso lindo.</p>
+            <div class="playlist-grid">
+                <div class="song-card gpu-accelerated">
+                    <div class="vinyl-disc"></div>
+                    <div class="song-info">
+                        <h4>A Nossa Música</h4>
+                        <p>A melodia que nos define</p>
+                    </div>
+                </div>
+                <div class="song-card gpu-accelerated">
+                    <div class="vinyl-disc"></div>
+                    <div class="song-info">
+                        <h4>Música da Nossa Viagem</h4>
+                        <p>Aquela que não saiu do replay</p>
+                    </div>
+                </div>
+                <div class="song-card gpu-accelerated">
+                    <div class="vinyl-disc"></div>
+                    <div class="song-info">
+                        <h4>A Sua Favorita</h4>
+                        <p>Sempre que toca, eu lembro de você</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 9: CINE PIPOCA (AGORA COM 3 VÍDEOS!) -->
+        <section id="cinema" class="reveal-section">
+            <div class="glass-container cinema-container">
+                <h2 class="section-title">Play na Nossa História</h2>
+                <p class="section-desc">Momentos gravados que eu queria poder viver em loop infinito para sempre.</p>
+                
+                <div class="multi-video-grid">
+                    <!-- VÍDEO PRINCIPAL (GRANDE) -->
+                    <div class="video-frame main-video gpu-accelerated">
+                        <!-- 🚨 COLOQUE SEU VÍDEO PRINCIPAL AQUI 🚨 -->
+                        <video controls playsinline preload="metadata">
+                            <source src="videos/WhatsApp Video 2026-05-15 at 16.15.53.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    
+                    <!-- VÍDEOS SECUNDÁRIOS (MENORES, LADO A LADO) -->
+                    <div class="side-videos">
+                        <div class="video-frame gpu-accelerated">
+                            <!-- 🚨 VÍDEO 2 AQUI 🚨 -->
+                            <video controls playsinline preload="none">
+                                <source src="videos/WhatsApp Video 2026-05-15 at 16.20.09.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="video-frame gpu-accelerated">
+                            <!-- 🚨 VÍDEO 3 AQUI 🚨 -->
+                            <video controls playsinline preload="none">
+                                <source src="videos/WhatsApp Video 2026-05-15 at 16.20.13.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER: CARTA FINAL E ASSINATURA -->
+        <footer id="final-letter">
+            <div class="footer-content">
+                <h2 class="signature-font">Para Sempre, Nós.</h2>
+                <p>Este site é só uma pequena fração digital de tudo o que eu sinto no mundo real. Você é, sempre foi, e sempre será a minha melhor escolha. A dona do meu coração.</p>
+                <div class="big-heart gpu-accelerated">❤️</div>
+                <p class="signature">Com todo o meu amor e devoção,<br><strong>Diego</strong></p>
+            </div>
+        </footer>
+
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+</html>
