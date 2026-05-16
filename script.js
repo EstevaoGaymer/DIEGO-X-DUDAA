@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "No meio de tanta gente...",
         "O destino escolheu cruzar perfeitamente os nossos caminhos.",
         "E desde então, a minha vida ganhou todas as cores.",
-        "Duda..."
+        "minha branquinha..."
     ];
 
     let currentPhrase = 0;
